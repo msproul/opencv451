@@ -11,9 +11,15 @@ then
 	then
 		echo "$PKGCONFIGFILE is already installed"
 	else
-		cp $PKGCONFIGFILE /usr/lib/pkgconfig/
+		echo "copying $PKGCONFIGFILE to "
+		sudo cp $PKGCONFIGFILE /usr/lib/pkgconfig/
 	fi
 else
 	echo "$PKGCONFIGFILE is missing"
 fi
+echo
+echo "**************************************"
+echo "Checking pkg-config for opencv4"
+pkg-config --cflags opencv4
+pkg-config --libs opencv4
 
