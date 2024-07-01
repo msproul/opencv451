@@ -160,6 +160,8 @@ else
 fi
 ls -l
 
+./fix-opnecv451.sh
+
 echo "Getting ready to build"
 echo -n "Hit return to continue"
 read WAITINPUT
