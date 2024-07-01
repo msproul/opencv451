@@ -99,8 +99,6 @@ read WAITINPUT
 cd $OPENCV_INSTALL_DIR
 
 ##########################################################
-# lets check to see which version is available
-
 #https://github.com/opencv/opencv/archive/refs/tags/4.5.1.tar.gz
 
 OPENCV_TARFILE="opencv-4.5.1.tar.gz"
