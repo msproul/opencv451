@@ -160,7 +160,13 @@ else
 fi
 ls -l
 
+pwd
+cd ..
+pwd
 ./fix-opencv451.sh
+cd $OPENCV_INSTALL_DIR
+pwd
+
 
 echo "Getting ready to build"
 echo -n "Hit return to continue"
