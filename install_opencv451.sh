@@ -11,6 +11,7 @@
 ###	Feb  8,	2021	<MLS> Added log file
 ###	Feb 18,	2021	<MLS> Added more logging
 ###	May 26,	2022	<MLS> New version to deal with 4.5.1
+###	Jul 20,	2024	<MLS> Added installation of libgtk2.0-dev
 ###############################################################################
 
 #	https://opencv.org/releases/page/4/
@@ -42,10 +43,11 @@ read WAITINPUT
 #echo "Installing libjpeg-dev"
 #echo "Installing libjpeg-dev"  >> $LOGFILENAME
 #sudo apt-get install libjpeg-dev
-#echo "Installing libgtk2.0-dev"
-#echo "Installing libgtk2.0-dev"  >> $LOGFILENAME
-#
-#sudo apt-get install libgtk2.0-dev
+echo "Installing libgtk2.0-dev"
+echo "This is needed specifically on the Raspberrry Pi 5"
+echo "Installing libgtk2.0-dev"  >> $LOGFILENAME
+
+sudo apt-get install libgtk2.0-dev
 
 
 echo "Checking for required programs..."
